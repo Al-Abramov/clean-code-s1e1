@@ -17,7 +17,8 @@ var completedTasksHolder=document.getElementById("completed");//completed
 //New task list item
 var createNewTaskElement=function(taskString){
 
-    var listItem=document.createElement("li");
+    //LI -> FORM
+    var listItem=document.createElement("form");
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
@@ -65,7 +66,8 @@ var createNewTaskElement=function(taskString){
 
 
 
-var addTask=function(){
+var addTask=function(e){
+    e.preventDefault()
     console.log("Add Task...");
     //Create a new list item with the text from the #new-task:
     if (!taskInput.value) return;
@@ -81,7 +83,8 @@ var addTask=function(){
 
 //Edit an existing task.
 
-var editTask=function(){
+var editTask=function(e){
+    e.preventDefault()
     console.log("Edit Task...");
     console.log("Change 'edit' to 'save'");
 
