@@ -21,7 +21,7 @@ box-sizing: border-box;
   width: 100%;
 }
 
-.header .more {
+.header .header__more {
   font-family: "fantasy", cursive;
 }
 

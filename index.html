@@ -12,21 +12,22 @@
       <figure>
         <img class="header__img" src="./eisenhower-matrix.jpg" alt="logo">
       </figure>
-      <a class="more" 
+      <a class="header__more" 
          href="https://goal-life.com/page/method/matrix-eisenhower">
          Want more details?
       </a>
     </header>
 
     <main class="main">
-      <form id="add-item">
+      <form class="add-item">
         <label for="new-task" class="new-task">Add Item</label>
-        <input id="new-task" type="text" class="field">
+        <input id="new-task" type="text" class="field-text">
         <button class="btn-add">Add</button>
       </form>
-      <h3>Todo</h3>
-      <section id="todo" class="hidden">
-        <form class="item">
+      
+      <section class="todo-container hidden">
+        <h3>Todo</h3>
+        <form class="todo">
           <input type="checkbox" class="checkbox">
           <label class="task">Pay Bills</label>
           <input type="text" class="field">
@@ -45,8 +46,9 @@
           </button>
         </form>
       </section>
-      <h3>Completed</h3>
-      <section id="completed" class="hidden">
+      
+      <section class="completed hidden">
+        <h3>Completed</h3>
         <form class="item">
           <input type="checkbox" class="checkbox" checked>
           <label class="task">See the Doctor</label>
