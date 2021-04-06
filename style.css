@@ -35,17 +35,23 @@ box-sizing: border-box;
 
 .main {
   display: block;
-  width: 400px;
+  width: 500px;
   margin: 0 auto 0;
 }
 
 .task {
-  width: 56%;
+  width: 66%;
   display: inline-block;
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
-  width: 226px;
+}
+
+.todo,
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
 }
 
 ul, 
@@ -91,6 +97,11 @@ h3,
   text-transform: uppercase;
 }
 
+.new-task__wrapper {
+  display: flex;
+}
+
+
 .field {
   margin: 0;
   font-size: 18px;
@@ -102,6 +113,7 @@ h3,
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
+  flex-grow: 1;
 }
 
 .field:focus {
@@ -154,7 +166,7 @@ h3,
 
 /* Completed */
 
-#completed .task {
+.completed .task {
   text-decoration: line-through;
   color: #888;
 }
@@ -167,9 +179,9 @@ h3,
 
 .edit-mode .field {
   display: inline-block;
-  width: 224px;
+  width: 64%;
 }
 
-.edit-mode .task{
+.edit-mode .task {
   display: none;
 }
