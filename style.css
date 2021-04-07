@@ -173,7 +173,7 @@ h3,
 
 /* Edit Task */
 
-.hidden .field {
+.todo-container_hidden .field {
   display: none;
 }
 
