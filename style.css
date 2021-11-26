@@ -73,8 +73,7 @@ button {
 }
 
 /* Heading */
-.task-title,
-.new-task-label {
+.task-title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -102,7 +101,7 @@ button {
 }
 
 /* New Task */
-.new-task-label {
+.new-task-title {
   display: block;
   margin: 0 0 20px;
 }
@@ -167,6 +166,6 @@ button {
   width: 224px;
 }
 
-.li.edit-mode .task {
+.li.edit-mode .visible {
   display: none;
 }
